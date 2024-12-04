@@ -7,6 +7,7 @@ ENV TZ="Europe/Paris"
 RUN apk update && apk upgrade \
     && apk add --no-cache bash openssh git
 
+COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 # Bash
 COPY ./.docker/php/.bashrc /root/.bashrc

@@ -1,8 +1,8 @@
 <?php
 
-namespace app;
+namespace App;
 
-class canard {
+abstract class Canard {
 
 
     public function cancaner()
@@ -14,7 +14,5 @@ class canard {
 
     }
 
-    public function afficher() {
-
-    }
+    abstract public function afficher();
 }
